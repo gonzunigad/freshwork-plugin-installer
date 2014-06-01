@@ -1,0 +1,14 @@
+{
+    "name": "gonzunigad/freshwork-installer",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "autoload": {
+        "psr-0": {"gonzunigad\\Composer": "src/"}
+    },
+    "extra": {
+        "class": "gonzunigad\\Composer\\PluginInstallerComposerPlugin"
+    },
+    "require": {
+        "composer-plugin-api": "1.0.0"
+    }
+}
