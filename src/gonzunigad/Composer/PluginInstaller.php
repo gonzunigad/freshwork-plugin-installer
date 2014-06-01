@@ -21,7 +21,7 @@ class PluginInstaller extends LibraryInstaller
             );
         }*/
 
-        return 'data/templates/'.substr($package->getPrettyName(), 23);
+        return 'freshwork/plugins/test';
     }
 
     /**
