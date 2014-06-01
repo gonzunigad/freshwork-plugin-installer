@@ -12,16 +12,10 @@ class PluginInstaller extends LibraryInstaller
      */
     public function getPackageBasePath(PackageInterface $package)
     {
-        /*$prefix = substr($package->getPrettyName(), 0, 23);
-        if ('phpdocumentor/template-' !== $prefix) {
-            throw new \InvalidArgumentException(
-                'Unable to install template, phpdocumentor templates '
-                .'should always start their package name with '
-                .'"phpdocumentor/template-"'
-            );
-        }*/
+       $lastPart = explode("/",$package->getPrettyName());
+		$lastPart = $lastPart[count($lastPart)-1];
 
-        return 'freshwork/plugins/test';
+        return 'freshwork/plugins/'.$lastPart;
     }
 
     /**
